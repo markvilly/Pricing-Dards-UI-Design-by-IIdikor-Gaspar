@@ -1,0 +1,159 @@
+:root {
+  --color1: #001219;
+  --drak-blue: #202842;
+  --background: #f4f2fd;
+  --white: #ffffff;
+  --grey: #abaeb8;
+  --light-grey: #717686;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  gap: 2%;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 1px 4px 6px 1px rgba(0, 0, 0, 0.1);
+  /* text-align: left; */
+  position: relative;
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-left: 20%;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-weight: 700;
+  color: var(--drak-blue);
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-left: 20%;
+  margin-top: 12%;
+  color: var(--drak-blue);
+}
+
+p {
+  margin-left: 20%;
+  color: var(--grey);
+  margin-top: -10px;
+}
+
+ul {
+  margin-left: 7.5%;
+  color: var(--drak-blue);
+  list-style-type: none;
+}
+
+.fa-white {
+  color: var(--white);
+  background-color: var(--drak-blue);
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 10px;
+  margin-right: 10px;
+  /* width: 20px;
+  height: 20px; */
+}
+
+.fa-dark {
+  color: var(--drak-blue);
+  background-color: var(--white);
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 10px;
+  margin-right: 10px;
+}
+
+.item {
+  margin-bottom: 12px;
+}
+
+li {
+  font-size: 14px;
+}
+
+a {
+  display: block;
+  position: absolute;
+
+  width: 69%;
+  background-color: var(--drak-blue);
+  padding: 10px 20px;
+  margin: 30px auto;
+  bottom: 0;
+  left: 15.5%;
+  border-radius: 2em;
+  text-decoration: none;
+  color: var(--white);
+  text-align: center;
+}
+
+article:nth-child(2) {
+  background-color: var(--drak-blue);
+}
+
+article:nth-child(2) a {
+  display: block;
+  position: absolute;
+
+  width: 69%;
+  background-color: var(--white);
+  padding: 10px 20px;
+  margin: 30px auto;
+  bottom: 0;
+  left: 15.5%;
+  border-radius: 2em;
+  text-decoration: none;
+  color: var(--drak-blue);
+  text-align: center;
+}
+
+article:nth-child(2) h2,
+article:nth-child(2) h1,
+article:nth-child(2) ul {
+  color: var(--white);
+}
+
+article:nth-child(2) p {
+  color: var(--light-grey);
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+  .row {
+    display: grid;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+}
